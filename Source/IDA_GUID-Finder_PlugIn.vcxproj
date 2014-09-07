@@ -106,9 +106,8 @@
       <OutputFile>.\Release/IDA_GUID-Finder_PlugIn.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>%40ECHO [Copy to IDA Pro plug-in directory..]
-COPY ..\IDA_GUID-Finder_PlugIn.plw "C:\Tools\IDA Pro 5.2\plugins\IDA_GUID-Finder_PlugIn.plw"
-</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

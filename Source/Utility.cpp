@@ -52,28 +52,6 @@ ALIGN(32) void Log(FILE *pLogFile, const char *format, ...)
 	}
 }
 
-
-// Get size of stream file
-ALIGN(32) long qfsize(FILE *fp)
-{
-	long psave, endpos;
-	long result = -1;
-
-	if((psave = qftell(fp)) != -1L)
-	{
-		if(qfseek(fp, 0, SEEK_END) == 0)
-		{
-			if((endpos = qftell(fp)) != -1L)
-			{
-				qfseek(fp, psave, SEEK_SET);
-				result = endpos;
-			}
-		}
-	}
-
-	return(result);
-}
-
 // Common hash function
 ALIGN(32) UINT DJBHash(const BYTE *pData, int iSize)
 {

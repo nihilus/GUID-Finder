@@ -21,5 +21,4 @@ typedef double TIMESTAMP;  // Time in floating seconds
 
 TIMESTAMP GetTimeStamp();
 void Log(FILE *pLogFile, const char *format, ...);
-long qfsize(FILE *fp);
 UINT DJBHash(const BYTE *pData, int iSize);
