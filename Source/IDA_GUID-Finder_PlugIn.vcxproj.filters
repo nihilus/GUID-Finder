@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{822d8c5f-82dd-4ea1-955a-480c36cbf51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Doc">
+      <UniqueIdentifier>{bee9abd4-d637-46ad-aa7f-e86b30e22368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{0af93976-a3b5-4176-a1bc-59558eeb1f05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContainersInl.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUID-Finder.txt">
+      <Filter>Doc</Filter>
+    </None>
+    <None Include="Classes.txt">
+      <Filter>DB</Filter>
+    </None>
+    <None Include="Interfaces.txt">
+      <Filter>DB</Filter>
+    </None>
+  </ItemGroup>
+</Project>
